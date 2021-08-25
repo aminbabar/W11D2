@@ -7,6 +7,7 @@ class TodoForm extends React.Component {
         this.state = {
             title: "",
             body: "",
+            done: false
         }
         this.updateBody = this.updateBody.bind(this);
         this.updateTitle = this.updateTitle.bind(this);
@@ -32,7 +33,8 @@ class TodoForm extends React.Component {
         this.props.receiveTodo({id: id, ...this.state})
         this.setState({
             title: "",
-            body: ""
+            body: "",
+            done: false
         })
     }
 
