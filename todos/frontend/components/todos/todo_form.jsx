@@ -58,7 +58,6 @@ class TodoForm extends React.Component {
                     />
                 </label>
 
-
                 <input type="submit" value="Create Todo"/>
             </form>
         )
