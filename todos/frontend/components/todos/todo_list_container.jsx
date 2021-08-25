@@ -5,12 +5,15 @@ import { receiveTodo, receiveTodos, removeTodo } from '../../actions/todo_action
 import { receiveStep, receiveSteps, removeStep } from '../../actions/step_actions';
 
 const mSTP = (state) => {
+    // debugger;
+    // window.state = state;
     return ({
-        todos: () => { allTodos(state) }
+        todos: allTodos(state)
     });
 }
 
 const mDTP = (dispatch) => {
+    // debugger;
     return ({
         receiveTodo: (todo) => { dispatch(receiveTodo(todo)) }
     });

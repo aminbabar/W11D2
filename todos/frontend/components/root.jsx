@@ -3,6 +3,8 @@ import { Provider } from 'react-redux';
 import App from './app';
 
 const Root = (props) => {
+    // window.store = props.store;
+    // console.log("hi");
     return (
         <Provider store={props.store}>
             <App />
